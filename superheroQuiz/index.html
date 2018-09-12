@@ -1,0 +1,133 @@
+
+
+<!-- ************************************************************************
+
+HTML - Final project for DART 450
+Marc-Olivier Lamothe
+
+************************************************************************ -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <title>Final project DART 450</title>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+  <!-- Include jQuery via the CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- include jQuery UI -->
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+  <!-- Include the script files -->
+  <script src="js/script.js"></script>
+  <script src="js/script_transitions.js"></script>
+
+</head>
+
+<!-- Body -->
+<body>
+
+
+
+
+
+
+
+<!-- Page Introduction -->
+<div id="divIntro">
+  <h1 id="introTitle">Which Super-Hero are YOU?</h1>
+  <a href="#" id="aStartQ">Start the Quiz!</a>
+</div>
+
+
+
+
+<!-- Page Colors -->
+<div id="wrapperColors">
+	<h2>What is your favorite color?</h2>
+	<div id="divAllColors">
+		<div class="divColors"><a class="aColor" href="#"><div class="divSpecificColor" id="divColor1"></div></a></div>
+		<div class="divColors"><a class="aColor" href="#"><div class="divSpecificColor" id="divColor2"></div></a></div>
+		<div class="divColors"><a class="aColor" href="#"><div class="divSpecificColor" id="divColor3"></div></a></div>
+		<div class="divColors"><a class="aColor" href="#"><div class="divSpecificColor" id="divColor4"></div></a></div>
+		<div class="divColors"><a class="aColor" href="#"><div class="divSpecificColor" id="divColor5"></div></a></div>
+		<div class="divColors"><a class="aColor" href="#"><div class="divSpecificColor" id="divColor6"></div></a></div>
+		<div class="divColors"><a class="aColor" href="#"><div class="divSpecificColor" id="divColor7"></div></a></div>
+		<div class="divColors"><a class="aColor" href="#"><div class="divSpecificColor" id="divColor8"></div></a></div>
+	</div>
+</div>
+
+
+<!-- Page texte descriptif -->
+
+
+<div id="divTxtEntry">
+  <h2>What are your inspirations? What is your biggest goal in life?</h2>
+  <textarea id="txtAreaEntry" placeholder="Write it down here."></textarea>
+  <a id="aTxtEntry" href="#">I'm done</a>
+</div>
+
+<div id="resultDivEntry">
+  <p id="pResultTxtEntry">Sadly, there is nothing very exciting about your dreams and goals. But it's okay, we need people like you so the others can shine!</p>
+  <a id="aResultDivEntry" href="#">Next question</a>
+</div>
+
+
+
+<!-- Page Location Spa -->
+<div id="locationSpa">
+  <div id="divWhereFrom">
+    <p id="pWhereYouFrom">Acquiring your location<span id="loading1">.</span><span id="loading2">.</span><span id="loading3">.</span></p>
+    <a id="aAfterLocation" href="#">Continue</a>
+  </div>
+
+  <div id="divError">
+    <p>You need to allow me to locate you. Refresh the page and grant me the permission, or else...</p>
+  </div>
+</div>
+
+
+
+<!-- Page Drag Destinations -->
+<div id="destinationDrag">
+  <div class="divDestination" id="divDestination1"><h3 class="h3Dest" id="h3Dest1">Beach vacations</h3></div>
+  <div class="divDestination" id="divDestination2"><h3 class="h3Dest" id="h3Dest2">Culinary trip</h3></div>
+  <div class="divDestination" id="divDestination3"><h3 class="h3Dest" id="h3Dest3">European tour</h3></div>
+  <div class="divDestination" id="divDestination4"><h3 class="h3Dest" id="h3Dest4">Cruise boat</h3></div>
+  <div id="zoneCharacter">
+    <img id="you" src="img/you.svg" alt="You">
+    <p>Here you are. Drag yourself on the type of trip you would like to have soon!</p>
+  </div>
+
+<section id="sectionEnd">
+  <p id="pConclusion">Waiting for a decision</p>
+  <button id="buttonAfterDestDrag" href="#">See which Super Hero you are!</button>
+</section>
+</div>
+
+
+
+
+<!-- Page Conclusion -->
+<div id="end">
+  <h1>The test is over.</h1>
+  <img src="img/tonystark.jpg" alt="your Super-Hero is Tony Stark!" >
+  <h2>You are Tony Stark!</h2>
+  <p>You are very intelligent, and really rich! You can get whatever you want,
+whenever you want. You do not have to worry about your bank account,
+just go buy some stuff!</p>
+</div>
+
+
+
+</body>
+
+</html>
