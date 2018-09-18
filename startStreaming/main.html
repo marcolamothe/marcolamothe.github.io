@@ -1,0 +1,182 @@
+<!doctype html>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+  $.get('main.svg', function(data) {
+    $(document.body).append(data.documentElement);
+    init();
+  });
+  function init() {
+	  
+	  
+	  
+		$('#secondmonitor').mouseenter(function() {
+			$('#ssecondmonitorglow').show();
+		});
+	  
+	  	$('#secondmonitor').mouseleave(function() {
+			$('#ssecondmonitorglow').hide();
+		});
+	  
+	  	$('#secondmonitor').click(function() {
+			$('#sXtout').show();
+			
+			$('#sinfoheadphones').hide();
+			$('#sinfomicro').hide();
+			$('#sinfowebcam').hide();
+			$('#sinfochair').hide();
+			
+			$('#sinfosecondmonitor').show();
+		});
+	  
+	  
+	  
+	  
+		$('#headphones').mouseenter(function() {
+			$('#sheadphonesglow').show();
+		});
+	  
+	  	$('#headphones').mouseleave(function() {
+			$('#sheadphonesglow').hide();
+		});
+	  
+	  	$('#headphones').click(function() {
+			$('#sXtout').show();
+			
+			$('#sinfosecondmonitor').hide();
+			$('#sinfomicro').hide();
+			$('#sinfowebcam').hide();
+			$('#sinfochair').hide();
+			
+			$('#sinfoheadphones').show();
+		});
+	  
+	  
+	  
+	  
+		$('#micro').mouseenter(function() {
+			$('#smicroglow_2_').show();
+		});
+	  
+	  	$('#micro').mouseleave(function() {
+			$('#smicroglow_2_').hide();
+		});
+	  
+	  	$('#micro').click(function() {
+			$('#sXtout').show();
+			
+			$('#sinfosecondmonitor').hide();
+			$('#sinfoheadphones').hide();
+			$('#sinfowebcam').hide();
+			$('#sinfochair').hide();
+			
+			$('#sinfomicro').show();
+		});
+	  
+	  
+	  
+	  
+	  
+		$('#webcam').mouseenter(function() {
+			$('#swebcamglow_2_').show();
+		});
+	  
+	  	$('#webcam').mouseleave(function() {
+			$('#swebcamglow_2_').hide();
+		});
+	  
+	  	$('#webcam').click(function() {
+			$('#sXtout').show();
+			
+			
+			$('#sinfosecondmonitor').hide();
+			$('#sinfoheadphones').hide();
+			$('#sinfomicro').hide();
+			$('#sinfochair').hide();
+			
+			$('#sinfowebcam').show();
+		});
+	  
+	  
+	  
+	  
+	  
+		$('#chair').mouseenter(function() {
+			$('#schairglow_2_').show();
+		});
+	  
+	  	$('#chair').mouseleave(function() {
+			$('#schairglow_2_').hide();
+		});
+	  
+	  	$('#chair').click(function() {
+			$('#sXtout').show();
+			
+			$('#sinfosecondmonitor').hide();
+			$('#sinfoheadphones').hide();
+			$('#sinfomicro').hide();
+			$('#sinfowebcam').hide();
+			
+			$('#sinfochair').show();
+		});
+	  
+	  
+	  
+	  
+	  
+	  	$('#sXtout').click(function() {
+			$('#sXtout').hide();
+			$('#sinfosecondmonitor').hide();
+			$('#sinfoheadphones').hide();
+			$('#sinfomicro').hide();
+			$('#sinfowebcam').hide();
+			$('#sinfochair').hide();
+			
+		});
+	  
+	  
+	  
+	  
+		$('#sboxallcomponents').mouseenter(function() {
+			$('#ssecondmonitorglow').show();
+			$('#sheadphonesglow').show();
+			$('#smicroglow_2_').show();
+			$('#swebcamglow_2_').show();
+			$('#schairglow_2_').show();
+		});
+	  
+	  	$('#sboxallcomponents').mouseleave(function() {
+			$('#ssecondmonitorglow').hide();
+			$('#sheadphonesglow').hide();
+			$('#smicroglow_2_').hide();
+			$('#swebcamglow_2_').hide();
+			$('#schairglow_2_').hide();
+		});
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  	
+  }
+</script>
+<style>
+	text, tspan{
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif" !important;
+		
+	}
+	.st49{
+		font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif" !important;
+	}
+	
+	svg{
+		height: 98vh;
+		width: 100%;
+	}
+	
+	body{
+		overflow: hidden;
+	}
+	
+</style>
