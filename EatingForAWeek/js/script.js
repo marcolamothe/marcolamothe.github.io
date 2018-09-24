@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('.divImg').click(startGame);
 });
 
-
+	//setup variables
 	var seconds = 6;
 	var dayOfTheWeek = 1;
 
@@ -15,6 +15,19 @@ $(document).ready(function(){
 	var fatGain = 0;
 
 	var scale = 1;
+
+	var randomSrc1;
+	var randomSrc2;
+	var randomSrc3;
+	var randomSrc4;
+
+	var randomOrder1;
+	var randomOrder2;
+	var randomOrder3;
+	var randomOrder4;
+
+	var tabNumbers = [1,2,3,4];
+
 
 
 
@@ -74,7 +87,39 @@ $("#h1Title").html("Prepare a meal for day 1");
 			$("#pClick3").html("Clicks: 0/20");
 			$("#pClick4").html("Clicks: 0/30");
 
+			randomSrc1 = Math.floor(Math.random() * 3) + 1;
+			randomSrc2 = Math.floor(Math.random() * 3) + 1;
+			randomSrc3 = Math.floor(Math.random() * 3) + 1;
+			randomSrc4 = Math.floor(Math.random() * 3) + 1;
 
+			$("#imgBadFood").attr("src","img/badFood" + randomSrc1 + ".svg");
+			$("#imgOkFood").attr("src","img/okFood" + randomSrc2 + ".svg");
+			$("#imgGoodFood").attr("src","img/goodFood" + randomSrc3 + ".svg");
+			$("#imgGreatFood").attr("src","img/greatFood" + randomSrc4 + ".svg");
+
+
+			//get random numbers to place randomly the 4 categories of food on the page
+			randomOrder1 = tabNumbers[Math.floor(Math.random()*tabNumbers.length)];
+			tabNumbers.splice( $.inArray(randomOrder1, tabNumbers), 1);
+
+			randomOrder2 = tabNumbers[Math.floor(Math.random()*tabNumbers.length)];
+			tabNumbers.splice( $.inArray(randomOrder2, tabNumbers), 1);
+
+			randomOrder3 = tabNumbers[Math.floor(Math.random()*tabNumbers.length)];
+			tabNumbers.splice( $.inArray(randomOrder3, tabNumbers), 1);
+
+			randomOrder4 = tabNumbers[Math.floor(Math.random()*tabNumbers.length)];
+			tabNumbers.splice( $.inArray(randomOrder4, tabNumbers), 1);
+
+
+			//change the order of the food categories
+			$("#food1").css("order", randomOrder1);
+			$("#food2").css("order", randomOrder2);
+			$("#food3").css("order", randomOrder3);
+			$("#food4").css("order", randomOrder4);
+
+			//reset the var tabNumbers with the 4 numbers for the next day
+			tabNumbers = [1,2,3,4];
 
 
 	        //si le jour 7 de la semaine est passé, faire ces actions.
@@ -93,7 +138,6 @@ $("#h1Title").html("Prepare a meal for day 1");
 	        		if (overallFatness < 7){
 	        			$("#pExplications").html("You lost " + (overallFatness - 7) + " pounds. Good job!");
 	        		}
-	        		$("#pExplications").html("You gained " + (overallFatness - 7) + " pounds!");
 	        		$("#divAllImg").hide();
 	        		document.getElementById("h1Title").style.marginTop = "2%";
 	        		//faire que la fonction timer arrête.

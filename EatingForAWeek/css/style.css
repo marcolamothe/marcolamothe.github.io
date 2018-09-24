@@ -19,12 +19,13 @@ h1{
 	margin: auto;
 	box-sizing: border-box;
 	overflow: auto;
+	display:flex;
+	flex-direction: row;
 }
 
 .divImg{
 	width: 23%;
 	margin: 0 1%;
-	float: left;
 }
 
 .divImg img{
