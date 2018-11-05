@@ -941,24 +941,34 @@ nav{
 #wrapperPage{
 	margin-top: 30px;
 }
-
+/*
 main{
 	margin-bottom:35px;
 }
-
-#mainEquipment div{
+*/
+.divEquip{
 	width: 80%;
-	margin: 50px auto 120px;
+	margin: 5% auto 12%;
 	overflow: auto;
-}
-
-#mainEquipment div{
 	color:white;
 }
 
-.h2Left{
+.equipTextLeft{
+	width: 55%;
 	float: left;
-	clear:both;
+}
+
+.equipTextRight{
+	width: 55%;
+	float: right;
+}
+
+
+
+.h3Equip{
+	clear: both;
+	float:left;
+	margin: 1% 0 2%;
 }
 
 .imgRight{
@@ -969,12 +979,11 @@ main{
 
 .pLeft{
 	float: left;
-	width:55%;
 	clear:left;
 }
 
-.h2Right{
-	float: right;
+.h2Equip{
+	float: left;
 	clear:both;
 }
 
@@ -986,7 +995,6 @@ main{
 
 .pRight{
 	float: right;
-	width:55%;
 	clear:right;
 }
 
@@ -1120,13 +1128,13 @@ main{
 		float:none;
 	}
 
-	#mainEquipment div{
+	.divEquip{
 		width: 80%;
 		margin:auto;
 		text-align: center;
 	}
 
-	.pLeft, .pRight, .h2Right, .h2Left{
+	.pLeft, .pRight, .h2Equip{
 		float:none;
 		width: 80%;
 		margin:auto;
@@ -1136,6 +1144,7 @@ main{
 		margin:10px auto 40px;
 		text-align: left;
 	}
+
 
 
 

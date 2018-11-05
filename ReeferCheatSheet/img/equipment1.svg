@@ -2,15 +2,11 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="526.999px" height="588.32px" viewBox="36.5 0 526.999 588.32" enable-background="new 36.5 0 526.999 588.32"
-	 xml:space="preserve">
+	 width="527px" height="588.32px" viewBox="0 0 527 588.32" enable-background="new 0 0 527 588.32" xml:space="preserve">
 <g>
-	<polygon fill="#D0ECEC" stroke="#000000" stroke-miterlimit="10" points="36.5,34.977 260.755,198.68 260.755,588.32 36.5,424.617 
-			"/>
-	<polygon fill="#D0ECEC" stroke="#000000" stroke-miterlimit="10" points="260.755,198.68 563.499,148.22 563.499,532.254 
-		260.755,588.32 	"/>
-	<polygon fill="#E7F5F3" stroke="#000000" stroke-miterlimit="10" points="563.499,148.22 328.033,1.336 36.5,34.977 
-		260.755,198.68 	"/>
-	<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="328.033" y1="1.336" x2="328.033" y2="186.221"/>
+	<polygon fill="#D0ECEC" points="0,34.977 224.255,198.68 224.255,588.32 0,424.617 	"/>
+	<polygon fill="#C7E0DF" points="224.255,198.68 527,148.22 527,532.254 224.255,588.32 	"/>
+	<polygon fill="#E7F5F3" points="527,148.22 291.533,1.336 0,34.977 224.255,198.68 	"/>
+	<polygon fill="#E1EAE8" points="291.533,1.336 291.533,187.49 224.255,198.68 0,34.977 	"/>
 </g>
 </svg>
